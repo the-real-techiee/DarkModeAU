@@ -1,4 +1,4 @@
-# DarkMode 
+# DarkMode ( Coming Soon!, Stay tuned!)
 A very eye comforting mod that turns the color of chat to black.
 
 ## Overview
@@ -10,7 +10,7 @@ A very eye comforting mod that turns the color of chat to black.
 - ✅ Steam (Supported)
 - ✅ Epic Games (Supported)
 - ✅ itch.io (Supported)
-- ❓ Cracked (works occasionally)
+- ❓ Cracked (Works occasionally)
 - ❌ Microsoft Store (Not Supported)
 - ❌ iOS/iPadOS/Android (Not Supported)
 - ❌ Switch/Xbox/Playstation (Not Supported)
