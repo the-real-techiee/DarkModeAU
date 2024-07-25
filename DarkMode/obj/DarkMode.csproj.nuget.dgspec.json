@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Jai\\Desktop\\Dark Mode\\DarkMode\\DarkMode\\DarkMode.csproj": {
-      "version": "1.0.0-dev",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\Jai\\Desktop\\Dark Mode\\DarkMode\\DarkMode\\DarkMode.csproj",
         "projectName": "DarkMode",
@@ -67,10 +67,6 @@
               "include": "Compile, Build, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[6.0.0-be.662, )"
-            },
-            "Reactor": {
-              "target": "Package",
-              "version": "[2.0.0, )"
             }
           },
           "imports": [

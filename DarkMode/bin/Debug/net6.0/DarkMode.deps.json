@@ -6,13 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "DarkMode/1.0.0-dev": {
+      "DarkMode/1.0.0": {
         "dependencies": {
           "AmongUs.GameLibs.Steam": "2024.6.18",
           "BepInEx.AutoPlugin": "1.1.0",
           "BepInEx.IL2CPP.MSBuild": "2.0.1",
-          "BepInEx.Unity.IL2CPP": "6.0.0-be.662",
-          "Reactor": "2.0.0"
+          "BepInEx.Unity.IL2CPP": "6.0.0-be.662"
         },
         "runtime": {
           "DarkMode.dll": {}
@@ -107,17 +106,6 @@
           "System.Reflection.Emit.ILGeneration": "4.7.0",
           "System.Reflection.Emit.Lightweight": "4.7.0",
           "System.Reflection.TypeExtensions": "4.7.0"
-        }
-      },
-      "Reactor/2.0.0": {
-        "dependencies": {
-          "BepInEx.Unity.IL2CPP": "6.0.0-be.662"
-        },
-        "runtime": {
-          "lib/net6.0/Reactor.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
-          }
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
@@ -598,7 +586,7 @@
     }
   },
   "libraries": {
-    "DarkMode/1.0.0-dev": {
+    "DarkMode/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -749,13 +737,6 @@
       "sha512": "sha512-vBObO1atXxhi2C4AuC53y87Bqeogi9xIrD1Ym3YWr5uxc8Nrm8SrsFeD1i3x04R999+XQ3FdeHrbXScyWYEHqQ==",
       "path": "monomod.utils/22.5.1.1",
       "hashPath": "monomod.utils.22.5.1.1.nupkg.sha512"
-    },
-    "Reactor/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7Bq0QksAUVqhZ++2jdMvjbbZSBjb4eYN5BAp2Q/b8h2PiFfuvVd/oVooBMjwm6Mooa0URFcISA1tBXNIJEcoTw==",
-      "path": "reactor/2.0.0",
-      "hashPath": "reactor.2.0.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rVom0vkh8dA=",
+  "dgSpecHash": "JrGaJKSLutU=",
   "success": true,
   "projectFilePath": "C:\\Users\\Jai\\Desktop\\Dark Mode\\DarkMode\\DarkMode\\DarkMode.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,6 @@
     "C:\\Users\\Jai\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
     "C:\\Users\\Jai\\.nuget\\packages\\monomod.runtimedetour\\22.5.1.1\\monomod.runtimedetour.22.5.1.1.nupkg.sha512",
     "C:\\Users\\Jai\\.nuget\\packages\\monomod.utils\\22.5.1.1\\monomod.utils.22.5.1.1.nupkg.sha512",
-    "C:\\Users\\Jai\\.nuget\\packages\\reactor\\2.0.0\\reactor.2.0.0.nupkg.sha512",
     "C:\\Users\\Jai\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Jai\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Jai\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

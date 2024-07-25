@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("DarkMode")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Techiee")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Mod generated using Reactor Template")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("DarkMode For Chat")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-dev")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DarkMode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DarkMode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

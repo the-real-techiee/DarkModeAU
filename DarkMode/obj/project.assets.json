@@ -319,22 +319,6 @@
           }
         }
       },
-      "Reactor/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "BepInEx.Unity.IL2CPP": "6.0.0-be.662"
-        },
-        "compile": {
-          "lib/net6.0/Reactor.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Reactor.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -1775,20 +1759,6 @@
         "lib/netstandard2.0/MonoMod.Utils.xml",
         "monomod.utils.22.5.1.1.nupkg.sha512",
         "monomod.utils.nuspec"
-      ]
-    },
-    "Reactor/2.0.0": {
-      "sha512": "7Bq0QksAUVqhZ++2jdMvjbbZSBjb4eYN5BAp2Q/b8h2PiFfuvVd/oVooBMjwm6Mooa0URFcISA1tBXNIJEcoTw==",
-      "type": "package",
-      "path": "reactor/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net6.0/Reactor.dll",
-        "lib/net6.0/Reactor.xml",
-        "reactor.2.0.0.nupkg.sha512",
-        "reactor.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -4450,15 +4420,14 @@
       "AmongUs.GameLibs.Steam >= 2024.6.18",
       "BepInEx.AutoPlugin >= 1.1.0",
       "BepInEx.IL2CPP.MSBuild >= 2.0.1",
-      "BepInEx.Unity.IL2CPP >= 6.0.0-be.662",
-      "Reactor >= 2.0.0"
+      "BepInEx.Unity.IL2CPP >= 6.0.0-be.662"
     ]
   },
   "packageFolders": {
     "C:\\Users\\Jai\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0-dev",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\Jai\\Desktop\\Dark Mode\\DarkMode\\DarkMode\\DarkMode.csproj",
       "projectName": "DarkMode",
@@ -4520,10 +4489,6 @@
             "include": "Compile, Build, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[6.0.0-be.662, )"
-          },
-          "Reactor": {
-            "target": "Package",
-            "version": "[2.0.0, )"
           }
         },
         "imports": [
