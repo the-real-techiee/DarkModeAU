@@ -1,4 +1,4 @@
-# DarkMode ( Coming Soon!, Stay tuned!)
+# DarkMode
 A very eye comforting mod that turns the color of chat to black.
 
 ## Overview
@@ -16,7 +16,7 @@ A very eye comforting mod that turns the color of chat to black.
 - ❌ Switch/Xbox/Playstation (Not Supported)
 
 ## ⬇️ Download & Install
-You can find the latest release here after it's released: [Download](https://github.com/the-real-techiee/DarkModeAU/releases/latest).
+You can find the latest release here: [Download](https://github.com/the-real-techiee/DarkModeAU/releases/latest).
 
 ## Special Thanks
 * Gurge44 for the source codes. [Check his mod out!](https://github.com/Gurge44/EndlessHostRoles)
