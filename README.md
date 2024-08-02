@@ -1,5 +1,5 @@
-# DarkMode
-A very eye comforting mod that turns the color of chat to black.
+# DarkMode v1.0
+Tired of playing Among Us with the chat being white? No worries! As this separate mod comforts your eyes with a black interface.
 
 ## Overview
 <p align="center">
@@ -15,8 +15,8 @@ A very eye comforting mod that turns the color of chat to black.
 - ❌ iOS/iPadOS/Android (Not Supported)
 - ❌ Switch/Xbox/Playstation (Not Supported)
 
-## ⬇️ Download & Install
+## Download & Install!
 You can find the latest release here: [Download](https://github.com/the-real-techiee/DarkModeAU/releases/latest).
 
-## Special Thanks
-* Gurge44 for the source codes. [Check his mod out!](https://github.com/Gurge44/EndlessHostRoles)
+## Special Thanks 🙏
+* [Gurge44](https://github.com/Gurge44/) for the source codes. [Check his mod out!](https://github.com/Gurge44/EndlessHostRoles)
