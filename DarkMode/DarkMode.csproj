@@ -4,7 +4,7 @@
         <LangVersion>latest</LangVersion>
         <DebugType>embedded</DebugType>
 
-        <VersionPrefix>1.0.0</VersionPrefix>
+        <VersionPrefix>1.1.5</VersionPrefix>
         <Description>DarkMode For Chat</Description>
         <Authors>Techiee</Authors>
     </PropertyGroup>
