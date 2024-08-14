@@ -1,4 +1,4 @@
-# DarkMode v1.0
+# DarkMode v1.1.5
 Tired of playing Among Us with the chat being white? No worries! As this separate mod comforts your eyes with a black interface.
 
 ## Overview
