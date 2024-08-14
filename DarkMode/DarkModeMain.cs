@@ -1,31 +1,35 @@
-﻿using AmongUs.QuickChat;
 using HarmonyLib;
 using UnityEngine;
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using BepInEx.Configuration;
-using Rewired.Utils.Platforms.Windows;
 using AmongUs.Data;
 using InnerNet;
+using TMPro;
 
-[BepInPlugin("com.darkmode.techiee", "DarkMode", "1.0")]
-public class Plugin : BasePlugin
+[BepInPlugin("com.darkmode.techiee", "DarkMode", "1.1.5")]
+public class DarkModePlugin : BasePlugin
 {
     public Harmony Harmony { get; } = new Harmony("Dark Mode, by Techiee.");
     public static ConfigEntry<bool> DarkModeConfig;
-
+    public static ConfigEntry<bool> ShowWatermark;
     public override void Load()
     {
         DarkModeConfig = Config.Bind("DarkMode",
                                      "DarkMode",
                                      true,
                                      "Set this to false if you don't want dark mode for now");
+
+        ShowWatermark = Config.Bind("Credits",
+                                     "ShowWatermark?",
+                                     true,
+                                     "Set this to false if you don't want to see the watermark.");
         Harmony.PatchAll();
     }
 }
 
 namespace DarkMode
-{
+{ 
     [HarmonyPatch(typeof(ChatBubble))]
     public static class ChatBubblePatch
     {
@@ -35,7 +39,7 @@ namespace DarkMode
         public static void SetText_Prefix(ChatBubble __instance, ref string chatText)
         {
             var sr = __instance.transform.Find("Background").GetComponent<SpriteRenderer>();
-            if (Plugin.DarkModeConfig.Value) sr.color = new Color(0, 0, 0, 128);
+            if (DarkModePlugin.DarkModeConfig.Value) sr.color = new Color(0, 0, 0, 128);
 
             if (chatText.Contains("░") ||
                 chatText.Contains("▄") ||
@@ -44,7 +48,7 @@ namespace DarkMode
                 chatText.Contains("▒")) ;
             else
             {
-                if (Plugin.DarkModeConfig.Value) chatText = ColorString(Color.white, chatText.TrimEnd('\0'));
+                if (DarkModePlugin.DarkModeConfig.Value) chatText = ColorString(Color.white, chatText.TrimEnd('\0'));
                 else chatText = ColorString(Color.black, chatText.TrimEnd('\0'));
             }
         }
@@ -60,13 +64,12 @@ namespace DarkMode
 
         public static void Prefix()
         {
-            if (AmongUsClient.Instance.AmHost && DataManager.Settings.Multiplayer.ChatMode == QuickChatModes.QuickChatOnly)
-                DataManager.Settings.Multiplayer.ChatMode = QuickChatModes.FreeChatOrQuickChat;
+            ModManager.Instance.ShowModStamp();//Show the mod's stamp...Incase if you wanna remove it just delete this line.
         }
 
         public static void Postfix(ChatController __instance)
         {
-            if (Plugin.DarkModeConfig.Value)
+            if (DarkModePlugin.DarkModeConfig.Value)
             {
                 __instance.freeChatField.background.color = new Color32(40, 40, 40, byte.MaxValue);
                 __instance.freeChatField.textArea.compoText.Color(Color.white);
@@ -90,7 +93,7 @@ namespace DarkMode
             }
 
             if (!__instance.freeChatField.textArea.hasFocus) return;
-            __instance.freeChatField.textArea.characterLimit = AmongUsClient.Instance.AmHost ? 2000 : 300;
+            __instance.freeChatField.textArea.characterLimit = AmongUsClient.Instance.AmHost ? 120 : 120;
 
             if ((Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl)) && Input.GetKeyDown(KeyCode.C))
                 ClipboardHelper.PutClipboardString(__instance.freeChatField.textArea.text);
@@ -106,12 +109,15 @@ namespace DarkMode
     [HarmonyPatch(typeof(PingTracker), nameof(PingTracker.Update))]
     public class PingTrackerPatch
     {
-        public static void Postfix()
+        public static void Postfix(PingTracker __instance)
         {
             PingTracker pingTracker = GameObject.FindObjectOfType<PingTracker>();
-            if (pingTracker != null)
+            if (DarkModePlugin.ShowWatermark.Value &&  pingTracker != null)
             {
-                pingTracker.text.text += "<br><size=2.3><#666>Dark Mode <sup><#3c39>[Dev]</sup></size>" + " <size=2><#f00>v1.0</size>" + " <size=2><color=#555>Made by<#39f> 〒∈⊂卄∥∈∈";
+                pingTracker.text.text += "<br><size=2.3><#666>Dark Mode <sup><#3c39>[Dev]</sup></size>" + " <size=2><#f00>v1.1.5</size>" + " <size=1.5><color=#555>Made by<#39f> Techiee";
+                //pingTracker.text.text += "<br><size=2.3><#666>Dark Mode <sup><#3c39>[Latest]</sup></size>" + " <size=2><#f00>v1.1.5</size>" + " <size=1.5><color=#555>Made by<#39f> Techiee";
+                __instance.text.outlineColor = Color.black;
+                __instance.text.alignment = TextAlignmentOptions.Center;
             }
         }
     }
