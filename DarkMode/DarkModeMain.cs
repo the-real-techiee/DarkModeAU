@@ -64,7 +64,7 @@ namespace DarkMode
 
         public static void Prefix()
         {
-            ModManager.Instance.ShowModStamp();//Show the mod's stamp...Incase if you wanna remove it just delete this line.
+            ModManager.Instance.ShowModStamp();//Shows the mod's stamp...Incase if you wanna remove it just delete this line.
         }
 
         public static void Postfix(ChatController __instance)
