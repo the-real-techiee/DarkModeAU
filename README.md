@@ -1,4 +1,7 @@
 # DarkMode v1.1.5
+<p align="center">
+   <img src="DarkModeAU.gif">
+</p>
 Tired of playing Among Us with the chat being white? No worries! As this separate mod comforts your eyes with a black interface.
 
 ## Overview
