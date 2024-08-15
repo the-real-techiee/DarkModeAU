@@ -4,7 +4,6 @@ Tired of straining your eyes with the chat being white? No worries as this mod w
    <img src="DarkModeAU.gif">
 </p>
 
-
 ## Overview
 <p align="center">
    <img src="DarkMode.png">
@@ -24,3 +23,4 @@ You can find the latest release here: [Download](https://github.com/the-real-tec
 
 ## Special Thanks 🙏
 * [Gurge44](https://github.com/Gurge44/) for the source codes. [Check his mod out!](https://github.com/Gurge44/EndlessHostRoles)
+* PaperSkies for the logo
