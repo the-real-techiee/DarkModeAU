@@ -1,5 +1,8 @@
 # DarkMode v1.1.5
 Tired of straining your eyes with the chat being white? No worries as this mod will turn the chat color to black!
+
+# Note : I am archiving all my repositories in order for me to focus well on academics. I am sorry for not making the next update.
+
 <p align="center">
    <img src="DarkModeAU.gif">
 </p>
